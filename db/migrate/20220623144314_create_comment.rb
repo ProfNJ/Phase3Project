@@ -1,4 +1,4 @@
-class Comment < ActiveRecord::Migration[6.1]
+class CreateComment < ActiveRecord::Migration[6.1]
   def change
     create_table :comments do |t|
       t.string :author
@@ -6,5 +6,7 @@ class Comment < ActiveRecord::Migration[6.1]
       t.integer :post_id
       t.string :date
       t.string :content
+    end
+
   end
 end

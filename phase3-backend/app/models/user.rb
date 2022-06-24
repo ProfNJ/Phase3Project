@@ -3,6 +3,11 @@ require 'date'
 class User < ActiveRecord::Base
     has_many :posts
     has_many :comments, through: :posts
+      else 
+        puts "User already exists"
+        return nil
+      end
+    end
 
     def write_post(content)
       today = Date.today
@@ -17,7 +22,7 @@ class User < ActiveRecord::Base
       Comment.create(user_id: self.id, post_id: post_id, date: DateTime.now, content: content)
       puts "Replied! at #{today_string}"
     end
-    
+
 #return most liked post
     def highlight
       hits = self.posts.where("likes > ?", 0).order('likes DESC')

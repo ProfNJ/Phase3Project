@@ -1,11 +1,13 @@
 class PostController < ApplicationController
 
     get '/posts' do
-        Post.all.to_json
+    sendout = Post.all.order("date DESC")
+    sendout.to_json
     end
 
-    get '/post/:id' do
-        post = Post.find(params[:id])
+    get '/user/:name/:id' do
+        userGet = User.find_by(name: params[:name])
+        post = userGet.posts.find(params[:id])
         arr = {post: post, comment: post.comments.all}
         arr.to_json
     end

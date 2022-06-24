@@ -1,0 +1,34 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "username": "_Glowreeyah",
+        "content": "Happy Children's day to those struggling with CSS 😬",
+        "date": "2021-01-07T16:30:17"
+      },
+      {
+        "id": 2,
+        "username": "_Glowreeyah",
+        "content": "This week, don't see the workload you have you to do, the stressful meetings you have to encounter. See the impact you are capable of making, the goals you can accomplish.",
+        "date": "2022-04-09T02:01:32"
+      },
+      {
+        "id": 3,
+        "username": "_Glowreeyah",
+        "content": "No Darling, Vanilla Javascript isn't different from normal Javascript. It's the same thing.",
+        "date": "2021-01-07T10:15:57"
+      },
+      {
+        "id": 4,
+        "username": "_Glowreeyah 👋",
+        "content": "“Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus. “ — Alexander Graham Bell",
+        "date": "2021-01-07T11:03:33"
+      },
+      {
+        "id": 5,
+        "username": "_Glowreeyah",
+        "content": "Enjoyment has ended... Back to Javascript Trenches😒",
+        "date": "2022-06-20T09:15:27"
+      }
+    ]
+  }

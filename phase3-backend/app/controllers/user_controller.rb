@@ -4,10 +4,13 @@ class UserController < ApplicationController
         User.all.to_json
     end
 
-    get '/user/:id' do
-        user = User.find(params[:id])
+    post '/user/:name' do
+        user = User.find_by(name: params[:name])
         arr = {user: user, posts: user.posts.all}
         arr.to_json
     end
+
+    
+ 
 
 end
